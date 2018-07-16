@@ -17,6 +17,8 @@
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/bin/gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpd \
     vendor/xiaomi/santoni/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
+    vendor/xiaomi/santoni/proprietary/vendor/etc/ft5336_biel_1080p.ini:$(TARGET_COPY_OUT_VENDOR)/etc/ft5336_biel_1080p.ini \
+    vendor/xiaomi/santoni/proprietary/vendor/etc/ft5336_oufei_720p.ini:$(TARGET_COPY_OUT_VENDOR)/etc/ft5336_oufei_720p.ini \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/xiaomi/santoni/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
