@@ -1045,7 +1045,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     SimSettings \
     ims \
-    imssettings \
     uceShimService \
     com.qualcomm.location \
     dpmserviceapp \
