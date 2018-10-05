@@ -1028,6 +1028,7 @@ PRODUCT_PACKAGES += \
     QtiSystemService \
     QtiTelephonyService \
     ims \
+    imssettings \
     uceShimService \
     com.qualcomm.location \
     qcrilmsgtunnel \
