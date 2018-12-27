@@ -1035,8 +1035,8 @@ PRODUCT_PACKAGES += \
     CNEService \
     WfdService \
     com.qualcomm.location \
-    qcrilmsgtunnel \
     ims \
+    qcrilmsgtunnel \
     imssettings \
     TimeService \
     colorservice \
