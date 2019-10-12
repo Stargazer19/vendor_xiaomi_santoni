@@ -1640,6 +1640,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/lib/librtp_jni.so:system/lib/librtp_jni.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
     vendor/xiaomi/santoni/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
+    vendor/xiaomi/santoni/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
@@ -1647,6 +1648,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/xiaomi/santoni/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
     vendor/xiaomi/santoni/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
