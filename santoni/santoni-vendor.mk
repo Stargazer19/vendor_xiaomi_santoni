@@ -151,6 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_memory_allocator.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib64/libmorpho_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_panorama.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libChamomilePA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libChamomilePA.so \
+    vendor/xiaomi/santoni/proprietary/vendor/lib/libDxHdcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDxHdcp.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libactuator_ad5816g.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5816g.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libactuator_ad5823.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5823.so \
     vendor/xiaomi/santoni/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \
