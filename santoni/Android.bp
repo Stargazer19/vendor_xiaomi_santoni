@@ -354,18 +354,6 @@ dex_import {
 }
 
 dex_import {
-	name: "uimlpalibrary",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/uimlpalibrary.jar"],
-}
-
-dex_import {
-	name: "uimremotesimlocklibrary",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/uimremotesimlocklibrary.jar"],
-}
-
-dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
