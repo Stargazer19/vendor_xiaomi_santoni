@@ -3,23 +3,23 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.
     class late_start
+    socket fpce stream 0666 system system
     user system
-    group system input uhid
+    group system sdcard_rw input uhid
     disabled
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.gx_fpd /vendor/bin/gx_fpd
     class core
     user system
-    group system drmrpc
+    group system
     disabled
-    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    # Create dir for fpc
+    mkdir /data/fpc 0770 system system
 
 on boot
-    # Goodix Fingerprint
-    chown system system /dev/goodix_fp
-    chmod 0644 /dev/goodix_fp
-	
     # fingerprint permissions
     chown system system /sys/devices/soc/soc:fpc1020/compatible_all
     chmod 0664 /sys/devices/soc/soc:fpc1020/compatible_all
@@ -32,6 +32,10 @@ on boot
     chown system system /sys/devices/soc/soc:fpc1020/spi_prepare
     chmod 0660 /sys/devices/soc/soc:fpc1020/spi_prepare
 
+    # Goodix Fingerprint
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+
     setprop persist.sys.fp.vendor none
     start vendor.gx_fpd
 
@@ -42,8 +46,7 @@ on property:persist.sys.fp.vendor=switchf
     setprop ro.boot.fpsensor fpc
     start vendor.fps_hal
 
-on property:persist.sys.fp.vendor=goodix
-    setprop persist.sys.fp.onstart 1
-    setprop ro.boot.fpsensor gdx
+on property:persist.sys.fp.onstart=1
     setprop ro.hardware.fingerprint goodix
+    setprop ro.boot.fpsensor gdx
     start vendor.fps_hal
