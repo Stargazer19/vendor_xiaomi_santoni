@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -189,26 +189,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
-	owner: "xiaomi",
-	apk: "proprietary/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "xiaomi",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -300,45 +280,15 @@ android_app_import {
 }
 
 dex_import {
-	name: "QPerformance",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
 	name: "QtiTelephonyServicelibrary",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/QtiTelephonyServicelibrary.jar"],
 }
 
 dex_import {
-	name: "UxPerformance",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
-dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
-dex_import {
-	name: "com.qualcomm.qti.imscmservice-V2.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
-}
-
-dex_import {
-	name: "com.qualcomm.qti.imscmservice-V2.1-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
-}
-
-dex_import {
-	name: "com.qualcomm.qti.uceservice-V2.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
 }
 
 dex_import {
@@ -351,18 +301,6 @@ dex_import {
 	name: "qcrilhook",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/qcrilhook.jar"],
-}
-
-dex_import {
-	name: "vendor.qti.ims.callinfo-V1.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
-}
-
-dex_import {
-	name: "vendor.qti.ims.rcsconfig-V1.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
 }
 
 dex_import {
