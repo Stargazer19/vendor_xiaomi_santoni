@@ -88,24 +88,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.fm@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/vendor.qti.hardware.fm@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/vendor.qti.hardware.fm@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libgpustats",
 	owner: "xiaomi",
 	strip: {
@@ -176,6 +158,25 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.fm@1.0",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/product/lib/vendor.qti.hardware.fm@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	product_specific: true,
 }
 
 android_app_import {
@@ -301,12 +302,5 @@ dex_import {
 	name: "qcrilhook",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/qcrilhook.jar"],
-}
-
-dex_import {
-	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
-	soc_specific: true,
 }
 
